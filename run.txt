@@ -1,0 +1,8 @@
+git clone https://github.com/mrblackhat0/Danceweb.git
+
+apt install nodejs
+
+npm install
+
+node app.js # for the starting server
+
