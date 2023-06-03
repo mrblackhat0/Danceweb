@@ -33,9 +33,7 @@ app.get('/contact', (req, res) => {
 });
 
 app.post('/contact', (req, res) => {
-  // res.status(200).render('contact.pug', { title: 'Dance Academy' });
   var datam = req.body;
-  
   var name = datam.Name;
   var age = datam.Age;
   var email = datam.Email;
@@ -49,16 +47,13 @@ app.post('/contact', (req, res) => {
     
     var sql = `INSERT INTO USERS(NAME,AGE,ADDRESS,EMAIL,PASSWORD,DESCP) VALUES('${name}',${age},'${address}','${email}','${password}','${descp}')`;
     
-    if (name!=''){
-      con.query(sql, function(err, result) {
-        if (err) {
-          res.send('Form cannot Submitted Successfully.').status(200)
+    con.query(sql, function(err, result){
+    if (err) {
+          res.send('Form cannot Submitted Successfully')
         };
         console.log("Data added Successfully");
-        res.send('Form Submitted Successfully.').status(200)
+        res.send('Form Submitted Successfully.')
       });
-    };
-    res.send('Form cannot Submitted Successfully.').status(200)
   });
 });
 
