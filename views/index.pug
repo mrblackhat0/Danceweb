@@ -1,0 +1,71 @@
+//- index.pug
+doctype html
+html
+  head
+    title=title
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        // #logo
+          img(src='/static/images/navlogo.png')
+        li #[a(href='/') Home]
+        li #[a(href='/') Dances]
+        li #[a(href='/') Services]
+        li #[a(href='/') About Us]
+        li #[a(href='/') Contact Us]
+    
+    section#introsection
+      div Well Come To The Rx Dance Academy
+      div.small Dancing in my Hobby
+    
+    section#missionsection
+      h1 Our Missions
+      div.card
+        h3 Hell of the Universe.
+        div.missions
+          div
+            img(src='/static/images/Dance-1.png')
+          div.content
+           | Welcome to the Hell of the Universe.
+           
+      div.card
+        h3 Death of the Universe.
+        div.missions
+          div
+            img(src='/static/images/Dance-2.png')
+          div.content
+            | Welcome to the Hell of the Universe.
+            
+      div.card
+        h3 Dances of the Universe.
+        div.missions
+          div
+            img(src='/static/images/Dance-3.png')
+          div.content
+           | Welcome to the Hell of the Universe.
+
+    
+    section#sponsersection
+      h1 Our Sponsers
+      div#logos
+        div.img
+          img(src='/static/images/logo1.png')
+        div.img
+          img(src='/static/images/logo2.png')
+        div.img
+          img(src='/static/images/logo3.png')
+        div.img
+          img(src='/static/images/logo4.png')
+        div.img
+          img(src='/static/images/logo5.png')
+
+    footer#footer
+      | wwww.Rxacademy.com 2023|2030 
+      strong copyright © 
+    
+    
+    script
+      include ../static/script.js
+      

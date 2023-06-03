@@ -1,0 +1,52 @@
+extend base.pug
+
+block script
+  script(src='/static/script.js')
+
+block style
+  style
+    include ../static/style.css
+
+block content
+  
+      
+  section#missionsection
+    h1 Our Missions
+    div.card
+      h3 Hell of the Universe.
+      div.missions
+        div
+          img(src='/static/images/Dance-1.png')
+        div.content
+         | Welcome to the Hell of the Universe.
+         
+    div.card
+      h3 Death of the Universe.
+      div.missions
+        div
+          img(src='/static/images/Dance-2.png')
+        div.content
+          | Welcome to the Death of the Universe.
+          
+    div.card
+      h3 Dances of the Universe.
+      div.missions
+        div
+          img(src='/static/images/Dance-3.png')
+        div.content
+         | Welcome to the Dances of the Universe.
+  
+      
+  section#sponsersection
+    h1 Our Sponsers
+    div#logos
+      div.img
+        img(src='/static/images/logo1.png')
+      div.img
+        img(src='/static/images/logo2.png')
+      div.img
+        img(src='/static/images/logo3.png')
+      div.img
+        img(src='/static/images/logo4.png')
+      div.img
+        img(src='/static/images/logo5.png')
